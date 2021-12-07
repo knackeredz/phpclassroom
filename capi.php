@@ -1,6 +1,6 @@
 <?php
 
-$json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-all&quot");
+$json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-all");
 
 $data = json_decode($json);
 
@@ -20,6 +20,6 @@ echo "ยอดผู้เสียชีวิตรวม : ".$data[0]->total
 
 echo "ยอดหายป่วยใหม่ : ".$data[0]->new_recovered."<br>";
 
-echo "ยอดหายป่วยรวม : ".$data[0]->total_recovered ."<br>";
+echo "ยอดหายป่วยรวม : ".$data[0]->total_recovered."<br>";
 
 ?>
