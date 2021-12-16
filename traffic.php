@@ -3,9 +3,7 @@
   
   <script language="JavaScript">
 <!-- Begin
-//จำนวน เม็ดฝน
 var no = 50;
-//ความเร็วของฝน
 var speed = 10;
   
   <div align="center">
