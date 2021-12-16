@@ -3,7 +3,7 @@
 
 <style>
 body {
-  background-color: #ecf9f2;
+  background-image: url("https://s10.gifyu.com/images/1952bfbd3f185384f.png");
 }
 </style>
   
