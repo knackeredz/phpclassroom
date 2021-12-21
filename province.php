@@ -5,7 +5,7 @@
   
   echo "<table border='1'>";
   echo "<tr><td><b>(align = 'center')ลำดับ</b></td>
-        <td><b>จังหวัด</b></td>
+        <td><b>(align = 'center')จังหวัด</b></td>
         <td><b>ผู้ป่วยใหม่</b></td>
         <td><b>ผู้ป่วยรวม</b></td>
         <td><b>ผู้ป่วยในประเทศ</b></td>
