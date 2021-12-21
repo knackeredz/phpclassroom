@@ -18,7 +18,7 @@
     echo "<td bgcolor='#A9C8C0'>";
     echo ($key+1);
     echo "</td>";
-    echo "<td bgcolor='#7C98AB'>";
+    echo "<td bgcolor='#8EA4C9'>";
     echo $val->province;
     echo "</td>";
     echo "<td bgcolor='#A9C8C0'>";
