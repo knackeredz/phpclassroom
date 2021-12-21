@@ -51,7 +51,7 @@
   }
   echo "</table></center>"; 
 
-  echo "<h1><center><b>รายงานสถานการณ์ COVID-19 ประจำวัน แยกตามรายจังหวัด</b></center></h1>"
+  echo "<h4><center><b>วันที่อัพเดท</b></center></h4>"
   echo $val->update_date;
 
 ?>
