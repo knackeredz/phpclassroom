@@ -5,7 +5,7 @@
 
 
   foreach($data as $key=>$val){
-    echo $val->province." : ".$val->new_case."<br>";
+    echo $val->province."<br>";
   }
     
     
