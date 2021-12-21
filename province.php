@@ -50,10 +50,10 @@
     echo $val->total_death;
     echo "</td>";
   }
-  echo "</table></center>"; 
+  echo "</table>"; 
 
   
   echo "<h4><center><b>วันที่อัพเดท</b></center></h4>";
   echo $val->update_date;
-
+  echo "</center>";
 ?>
