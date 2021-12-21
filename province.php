@@ -4,7 +4,7 @@
   $data = json_decode($json);
   
   echo "<table border='1'>";
-  echo "<tr align="center"><td><b>ลำดับ</b></td>
+  echo "<tr><td><b>ลำดับ</b></td>
         <td><b>จังหวัด</b></td>
         <td><b>ผู้ป่วยใหม่</b></td>
         <td><b>ผู้ป่วยรวม</b></td>
@@ -14,7 +14,7 @@
         <td><b>ผู้เสียชีวิตรวม</b></td>
         <td><b>วันที่อัพเดต</b></td></tr>";
   foreach($data as $key=>$val){
-    echo "<tr align="center">";
+    echo "<tr>";
     echo "<td>";
     echo ($key+1);
     echo "</td>";
