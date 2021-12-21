@@ -14,7 +14,7 @@
         <td><b>ผู้เสียชีวิตรวม</b></td>
         <td><b>วันที่อัพเดต</b></td></tr>";
   foreach($data as $key=>$val){
-    echo "<tr>";
+    echo "<tr align='center'>";
     echo "<td>";
     echo ($key+1);
     echo "</td>";
