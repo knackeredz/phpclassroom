@@ -4,7 +4,7 @@
   $data = json_decode($json);
   
 
-  echo "<h1><center><b>รายงานสถานการณ์ COVID-19 ประจำวัน แยกตามรายจังหวัด</b></center></h1>";
+  echo "<h2><center><b>รายงานสถานการณ์ COVID-19 ประจำวัน แยกตามรายจังหวัด</b></center></h2>";
   echo "<center><table border='1'>";
   echo "<tr align='center'>
         <td bgcolor='#413C69'><b>ลำดับ</b></td>
@@ -54,6 +54,6 @@
 
   
   echo "<h4><center><b>วันที่อัพเดท</b></center></h4>";
-  echo $val->update_date;
+  echo "<center>$val->update_date</center>;
 
 ?>
