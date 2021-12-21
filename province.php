@@ -25,7 +25,7 @@
     echo $val->new_case;
     echo "</td>";
     echo "<td>";
-    echo $val->tatal_case;
+    echo $val->total_case;
     echo "</td>";
     echo "<td>";
     echo $val->new_case_excludeabroad;
