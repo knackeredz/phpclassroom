@@ -10,8 +10,8 @@
         <td><b>ผู้ป่วยรวม</b></td>
         <td><b>ผู้ป่วยในประเทศ</b></td>
         <td><b>ผู้ป่วยรวมในประเทศ</b></td>
-        <td bgcolor='#ff6666'><b>ผู้เสียชีวิตใหม่</b></td>
-        <td><b>ผู้เสียชีวิตรวม</b></td>
+        <td bgcolor='#ff8080'><b>ผู้เสียชีวิตใหม่</b></td>
+        <td bgcolor='#df9f9f'><b>ผู้เสียชีวิตรวม</b></td>
         <td><b>วันที่อัพเดต</b></td></tr>";
   foreach($data as $key=>$val){
     echo "<tr align='center'>";
@@ -33,10 +33,10 @@
     echo "<td>";
     echo $val->total_case_excludeabroad;
     echo "</td>";
-    echo "<td bgcolor='#ff8080'>";
+    echo "<td bgcolor='#ffe6e6'>";
     echo $val->new_death;
     echo "</td>";
-    echo "<td>";
+    echo "<td bgcolor='#f9ecec'>";
     echo $val->total_death;
     echo "</td>";
     echo "<td>";
