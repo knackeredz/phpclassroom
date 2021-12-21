@@ -37,7 +37,7 @@
     echo $val->new_case_excludeabroad;
     echo "</td>";
     
-    echo "<td bgcolor='#E9967A'>";
+    echo "<td bgcolor='#FFD1BB'>";
     echo $val->total_case_excludeabroad;
     echo "</td>";
     
@@ -45,7 +45,7 @@
     echo $val->new_death;
     echo "</td>";
     
-    echo "<td bgcolor='#FFD1BB'>";
+    echo "<td bgcolor='#E9967A'>";
     echo $val->total_death;
     echo "</td>";
     
