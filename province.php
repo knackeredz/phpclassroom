@@ -13,6 +13,9 @@
     echo "<td>";
     echo $val->province;
     echo "</td>";
+    echo "<td>";
+    echo $val->new_case;
+    echo "</td>";
     echo "</tr>";
   }
   echo "</table>"; 
