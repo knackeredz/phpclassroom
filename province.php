@@ -8,7 +8,7 @@
   echo "<center><table border='1'>";
   echo "<tr align='center'>
         <td bgcolor='#413C69'><b>ลำดับ</b></td>
-        <td bgcolor='#4382BB'><b>จังหวัด</b></td>
+        <td bgcolor='#82B2B7'><b>จังหวัด</b></td>
         <td bgcolor='#4682B4'><b>ผู้ป่วยใหม่</b></td>
         <td bgcolor='#218B81'><b>ผู้ป่วยรวม</b></td>
         <td bgcolor='#FFD700'><b>ผู้ป่วยในประเทศ</b></td>
