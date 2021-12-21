@@ -4,7 +4,7 @@
   $data = json_decode($json);
   
   echo "<center><table border='1'>";
-  echo "<tr align='center'><td><b>ลำดับ</b></td>
+  echo "<tr align='center' bgcolor='pink'><td><b>ลำดับ</b></td>
         <td><b>จังหวัด</b></td>
         <td><b>ผู้ป่วยใหม่</b></td>
         <td><b>ผู้ป่วยรวม</b></td>
