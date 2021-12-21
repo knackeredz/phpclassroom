@@ -4,7 +4,7 @@
   $data = json_decode($json);
   
   echo "<table border='1'>";
-  echo "<b><tr><td>ลำดับ</td><td>จังหวัด</td></tr></b>";
+  echo "<tr><td><b>ลำดับ</b></td><td><b>จังหวัด</b></td></tr>";
   foreach($data as $key=>$val){
     echo "<tr>";
     echo "<td>";
