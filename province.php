@@ -13,8 +13,8 @@
         <td bgcolor='#218B81'><b>ผู้ป่วยรวม</b></td>
         <td bgcolor='#FFD700'><b>ผู้ป่วยในประเทศ</b></td>
         <td bgcolor='#FF4500'><b>ผู้ป่วยรวมในประเทศ</b></td>
-        <td bgcolor='#A52A2A'><b>ผู้เสียชีวิตใหม่</b></td>
-        <td bgcolor='#9C4B28'><b>ผู้เสียชีวิตรวม</b></td></font></tr>";
+        <td bgcolor='#d04949'><b>ผู้เสียชีวิตใหม่</b></td>
+        <td bgcolor='#cb6134'><b>ผู้เสียชีวิตรวม</b></td></font></tr>";
  
   foreach($data as $key=>$val){
     echo "<tr align='center'>";
