@@ -3,6 +3,7 @@
   $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces");
   $data = json_decode($json);
   
+  echo "<body style='background-color:#E6F1EF'>";
   echo "<br><h2><center><b>รายงานสถานการณ์ COVID-19 ประจำวัน แยกตามรายจังหวัด</b></center></h2><br>";
   echo "<center><table border='1'>";
   echo "<tr align='center'>
@@ -48,6 +49,7 @@
     echo "<td bgcolor='#E9967A'>";
     echo $val->total_death;
     echo "</td>";
+    echo "</tr>";
   }
   echo "</table><br>"; 
 
