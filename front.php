@@ -11,7 +11,18 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          Column
+        </div>
+        <div class="col">
+          Column
+        </div>
+        <div class="col">
+          Column
+        </div>
+      </div>
+    </div> 
   </body>
 </html>
