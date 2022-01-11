@@ -8,6 +8,7 @@
         width:250px;
         height:250px;
         margin-bottom: 10px;
+        padding : 20px;
      }
      #box2{
         width:400px;
