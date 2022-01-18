@@ -133,9 +133,9 @@
             <th>#</th>
             <th>จังหวัด</th>
             <th>ผู้ป่วยใหม่</th>
-            <th>หายป่วยกลับบ้าน</th>
             <th>ผู้ป่วยสะสม</th>
             <th>เสียชีวิต</th>
+            <th>เสียชีวิตรวม</th>
           </tr>
          
             <?php foreach($data as $key=>$val){
@@ -153,15 +153,15 @@
                 echo "</td>";
   
                 echo "<td>";
-                echo $val->new_recovered;
-                echo "</td>";
-  
-                echo "<td>";
                 echo $val->total_case;
                 echo "</td>";
   
                 echo "<td>";
                 echo $val->new_death;
+                echo "</td>";
+  
+                echo "<td>";
+                echo $val->total_death;
                 echo "</td>";
  
              echo "</tr>";
