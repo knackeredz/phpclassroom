@@ -46,7 +46,7 @@
         <span class="fs-4">ศูนย์ข้อมูล Covid-19 โรงเรียนหล่มสักวิทยาคม</span>
       </a>
     </div>
-    <!-- แก้ไขส่วนที่ 1 -->
+    
     <div class="d-flex justify-content-end">
       <div class="card mb-3" style="max-width: 540px;">
         <div class="row g-0">
@@ -68,7 +68,7 @@
       <p class="fs-5 text-muted">ข้อมูล ณ <?php echo $data[0]->txn_date; ?></p>
     </div>
   </header>
-  <!-- แก้ไขส่วนที่ 2 -->
+ 
   <main>
     <div class="row row-cols-1 row-cols-md-4 mb-3 text-center">
       <div class="col-3">
@@ -137,8 +137,7 @@
             <th>ผู้ป่วยสะสม</th>
             <th>เสียชีวิต</th>
           </tr>
-          //<!-- แก้ไขส่วนที่ 3 -->
-          //<!-- Loop -->
+         
             <?php foreach($data as $key=>$val){
               echo "<tr>";
                 echo "<td>";
