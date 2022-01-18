@@ -56,8 +56,8 @@
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title">จัดทำโดย</h5>
-              <p class="card-text">นายยิ่งคุณ รอดทิม </p>
-              <p class="card-text"><small class="text-muted">ม.6/13 เลขที่ 0 , 88888</small></p>
+              <p class="card-text">นายสาวกณิกนันต์ โวหารคล่อง</p>
+              <p class="card-text"><small class="text-muted">ม.6/13 เลขที่ 12 , 55440</small></p>
             </div>
           </div>
         </div>
@@ -87,7 +87,7 @@
             <h4 class="my-0 fw-normal">หายป่วยกลับบ้าน</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">xxx<small class="text-muted fw-light"> คน</small></h1>
+            <h1 class="card-title pricing-card-title"><?php echo $data[0]->new_recovered; ?><small class="text-muted fw-light"> คน</small></h1>
           </div>
         </div>
       </div>
@@ -97,7 +97,7 @@
             <h4 class="my-0 fw-normal">ผู้ป่วยสะสม</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">xxx<small class="text-muted fw-light"> คน</small></h1>
+            <h1 class="card-title pricing-card-title"><?php echo $data[0]->total_case; ?><small class="text-muted fw-light"> คน</small></h1>
           </div>
         </div>
       </div>
@@ -107,7 +107,7 @@
             <h4 class="my-0 fw-normal">เสียชีวิต</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">xxx<small class="text-muted fw-light"> คน</small></h1>
+            <h1 class="card-title pricing-card-title"><?php echo $data[0]->new_death; ?><small class="text-muted fw-light"> คน</small></h1>
           </div>
         </div>
       </div>
