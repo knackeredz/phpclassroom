@@ -134,7 +134,7 @@
           </tr>
           <!-- แก้ไขส่วนที่ 3 -->
           <!-- Loop -->
-          
+<?php
           foreach($data as $key=>$val){
             echo ($key+1);
           <tr>
@@ -162,6 +162,7 @@
             <td> - </td>
             <td> - </td>
           </tr>
+?>
         </table>
       </div>
     </div>
