@@ -1,3 +1,9 @@
+<?php 
+  $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-all");
+  $data = json_decode($json);
+  echo "ยอดผู้ป่วยวันนี้ : ".$data[0]->new_case."<br>";
+  echo "ยอดผู้ป่วยรวม : ".$data[0]->total_case."<br>";
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,9 +13,12 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
     <title>ศูนย์ข้อมูล Covid-19 โรงเรียนหล่มสักวิทยาคม</title>
+
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/pricing/">
+
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -18,17 +27,20 @@
         -moz-user-select: none;
         user-select: none;
       }
+
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
       }
     </style>
+
     
     <!-- Custom styles for this template -->
     <link href="https://getbootstrap.com/docs/5.1/examples/pricing/pricing.css" rel="stylesheet">
   </head>
   <body>
+
 <div class="container py-3">
   <header>
     <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
@@ -102,7 +114,9 @@
         </div>
       </div>
     </div>
+
   </main>
+
   <footer class="pt-4 my-md-5 pt-md-5 border-top">
     <header>
       <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
@@ -149,9 +163,11 @@
         </table>
       </div>
     </div>
+
   </footer>
-  <!-- แก้ไขส่วนที่ 4 -->
 </div>
+
+
     
   </body>
 </html>
