@@ -140,14 +140,32 @@
           //<!-- แก้ไขส่วนที่ 3 -->
           //<!-- Loop -->
             <?php foreach($data as $key=>$val){
-              <tr>
-                <td><?php echo ($key+1); ?></td>
-                <td><?php echo $val->province; ?></td>
-                <td><?php echo $val->new_case; ?></td>
-                <td><?php echo $val->new_recovered ?></td>
-                <td><?php echo $val->total_case; ?></td>
-                <td><?php echo $val->new_death; ?></td>
-              </tr>
+              echo "<tr>";
+                echo "<td>";
+                echo ($key+1);
+                echo "</td>";
+  
+                echo "<td>";
+                echo $val->province;
+                echo "</td>";
+  
+                echo "<td>";
+                echo $val->new_case;
+                echo "</td>";
+  
+                echo "<td>";
+                echo $val->new_recovered;
+                echo "</td>";
+  
+                echo "<td>";
+                echo $val->total_case;
+                echo "</td>";
+  
+                echo "<td>";
+                echo $val->new_death;
+                echo "</td>";
+ 
+             echo "</tr>";
             } 
           ?>
         </table>
