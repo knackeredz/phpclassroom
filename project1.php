@@ -134,34 +134,15 @@
           </tr>
           <!-- แก้ไขส่วนที่ 3 -->
           <!-- Loop -->
-          
-<?php
-    $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces");
-    $data = json_decode($json);
- ?>
+         
+     //foreach($data as $key=>$val){
           <tr>
             <td><?php echo ($key+1); ?></td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-          </tr>
-          <tr>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-          </tr>
-          <tr>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
+            <td><?php echo $val->province; ?></td>
+            <td><?php echo $val->new_case; ?></td>
+            <td><?php echo $val->new_recovered ?></td>
+            <td><?php echo $val->total_case; ?></td>
+            <td><?php echo $val->new_death; ?></td>
           </tr>
         </table>
       </div>
