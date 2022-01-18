@@ -141,14 +141,15 @@
           //<!-- Loop -->
          
           <?php foreach($data as $key=>$val){
-            <tr>
-              <td><?php echo ($key+1); ?></td>
-              <td><?php echo $val->province; ?></td>
-              <td><?php echo $val->new_case; ?></td>
-              <td><?php echo $val->new_recovered ?></td>
-              <td><?php echo $val->total_case; ?></td>
-              <td><?php echo $val->new_death; ?></td>
-            </tr>
+              <tr>
+                <td><?php echo ($key+1); ?></td>
+                <td><?php echo $val->province; ?></td>
+                <td><?php echo $val->new_case; ?></td>
+                <td><?php echo $val->new_recovered ?></td>
+                <td><?php echo $val->total_case; ?></td>
+                <td><?php echo $val->new_death; ?></td>
+              </tr>
+            }
           <?
         </table>
       </div>
