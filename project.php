@@ -46,7 +46,7 @@
         <span class="fs-4">ศูนย์ข้อมูล Covid-19 โรงเรียนหล่มสักวิทยาคม</span>
       </a>
     </div>
-    <!-- แก้ไขส่วนที่ 1 -->
+    
     <div class="d-flex justify-content-end">
       <div class="card mb-3" style="max-width: 540px;">
         <div class="row g-0">
@@ -68,7 +68,7 @@
       <p class="fs-5 text-muted">ข้อมูล ณ <?php echo $data[0]->txn_date; ?></p>
     </div>
   </header>
-  <!-- แก้ไขส่วนที่ 2 -->
+ 
   <main>
     <div class="row row-cols-1 row-cols-md-4 mb-3 text-center">
       <div class="col-3">
@@ -114,6 +114,11 @@
     </div>
 
   </main>
+  
+  <?php
+      $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces");
+      $data = json_decode($json);
+  ?>
 
   <footer class="pt-4 my-md-5 pt-md-5 border-top">
     <header>
@@ -128,36 +133,40 @@
             <th>#</th>
             <th>จังหวัด</th>
             <th>ผู้ป่วยใหม่</th>
-            <th>หายป่วยกลับบ้าน</th>
             <th>ผู้ป่วยสะสม</th>
             <th>เสียชีวิต</th>
+            <th>เสียชีวิตรวม</th>
           </tr>
-          <!-- แก้ไขส่วนที่ 3 -->
-          <!-- Loop -->
-          <tr>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-          </tr>
-          <tr>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-          </tr>
-          <tr>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-            <td> - </td>
-          </tr>
+         
+            <?php foreach($data as $key=>$val){
+              echo "<tr>";
+                echo "<td>";
+                echo ($key+1);
+                echo "</td>";
+  
+                echo "<td>";
+                echo $val->province;
+                echo "</td>";
+  
+                echo "<td>";
+                echo $val->new_case;
+                echo "</td>";
+  
+                echo "<td>";
+                echo $val->total_case;
+                echo "</td>";
+  
+                echo "<td>";
+                echo $val->new_death;
+                echo "</td>";
+  
+                echo "<td>";
+                echo $val->total_death;
+                echo "</td>";
+ 
+             echo "</tr>";
+            } 
+          ?>
         </table>
       </div>
      </div>
@@ -165,7 +174,5 @@
   </footer>
  </div>
 
-
-    
   </body>
 </html>
