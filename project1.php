@@ -138,8 +138,6 @@
           </tr>
           //<!-- แก้ไขส่วนที่ 3 -->
           //<!-- Loop -->
-         
-          <?php 
             foreach($data as $key=>$val){
               <tr>
                 <td><?php echo ($key+1); ?></td>
