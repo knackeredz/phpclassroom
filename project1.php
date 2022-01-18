@@ -115,9 +115,10 @@
 
   </main>
   
-    <?php
+  <?php
       $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces");
       $data = json_decode($json);
+  ?>
 
   <footer class="pt-4 my-md-5 pt-md-5 border-top">
     <header>
@@ -138,7 +139,7 @@
           </tr>
           //<!-- แก้ไขส่วนที่ 3 -->
           //<!-- Loop -->
-            foreach($data as $key=>$val){
+            <?php foreach($data as $key=>$val){
               <tr>
                 <td><?php echo ($key+1); ?></td>
                 <td><?php echo $val->province; ?></td>
@@ -147,7 +148,8 @@
                 <td><?php echo $val->total_case; ?></td>
                 <td><?php echo $val->new_death; ?></td>
               </tr>
-            }
+            } 
+          ?>
         </table>
       </div>
      </div>
@@ -155,7 +157,5 @@
   </footer>
  </div>
 
-
-    ?>
   </body>
 </html>
