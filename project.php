@@ -1,8 +1,8 @@
 <?php 
   $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-all");
   $data = json_decode($json);
-  echo "ยอดผู้ป่วยวันนี้ : ".$data[0]->new_case."<br>";
-  echo "ยอดผู้ป่วยรวม : ".$data[0]->total_case."<br>";
+  //echo "ยอดผู้ป่วยวันนี้ : ".$data[0]->new_case."<br>";
+  //echo "ยอดผู้ป่วยรวม : ".$data[0]->total_case."<br>";
 ?>
 <!doctype html>
 <html lang="en">
@@ -79,7 +79,7 @@
             <h4 class="my-0 fw-normal">ผู้ป่วยใหม่</h4>
           </div>
           <div class="card-body">
-            <h1 class="card-title pricing-card-title">xxx<small class="text-muted fw-light"> คน</small></h1>
+            <h1 class="card-title pricing-card-title"><?php echo $data[0]->new_case; ?><small class="text-muted fw-light"> คน</small></h1>
           </div>
         </div>
       </div>
