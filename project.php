@@ -1,8 +1,6 @@
 <?php 
   $json = file_get_contents("https://covid19.ddc.moph.go.th/api/Cases/today-cases-all");
   $data = json_decode($json);
-  //echo "ยอดผู้ป่วยวันนี้ : ".$data[0]->new_case."<br>";
-  //echo "ยอดผู้ป่วยรวม : ".$data[0]->total_case."<br>";
 ?>
 <!doctype html>
 <html lang="en">
@@ -67,7 +65,7 @@
     </div>
     <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
       <h1 class="display-7 fw-normal">รายงานข้อมูล Covid-19 รายวัน</h1>
-      <p class="fs-5 text-muted">ข้อมูล ณ วันที่ xx เดือน xxxx ปี 2565</p>
+      <p class="fs-5 text-muted">ข้อมูล ณ <?php echo $data[0]->txn_date; ?></p>
     </div>
   </header>
   <!-- แก้ไขส่วนที่ 2 -->
